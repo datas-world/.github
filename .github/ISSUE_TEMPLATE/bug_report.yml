@@ -1,0 +1,67 @@
+name: Bug Report
+description: Report something that is broken or not working as expected.
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, please search the existing issues to avoid duplicates.
+        Check the repository's README for any known limitations.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: >
+        Operational urgency — when should this be addressed?
+        P0 = active exploit / safety blocker / IP violation (address immediately).
+        P1 = known unmitigated risk or deadline within 3 months.
+        P2 = planned work, default for most issues.
+        P3 = long-horizon / aspirational.
+      options:
+        - "P2 — planned / default"
+        - "P0 — critical / immediate"
+        - "P1 — deadline within 3 months"
+        - "P3 — long-horizon / aspirational"
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps that reliably trigger the issue.
+      placeholder: |
+        1. …
+        2. …
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: >
+        Relevant versions, OS, runtime, configuration, etc.
+        Omit anything not applicable.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Logs, screenshots, links to related issues, etc.
+    validations:
+      required: false

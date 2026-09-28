@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/datas-world/.github/blob/main/SECURITY.md
+    about: >
+      For security vulnerabilities, use the Security → Advisories tab of the
+      affected repository to report privately. Do not open a public issue.
+  - name: Support and usage questions
+    url: https://github.com/datas-world/.github/blob/main/SUPPORT.md
+    about: >
+      How to get help, what to include in a report, and what is out of scope.

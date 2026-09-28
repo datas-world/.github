@@ -1,0 +1,23 @@
+version = 1
+SPDX-PackageName = "datas-world-community-health"
+SPDX-PackageSupplier = "Torsten Knodt <github@datas-world.de>"
+SPDX-PackageDownloadLocation = "https://github.com/datas-world/.github"
+
+[[annotations]]
+path = [
+  "LICENSE",
+  ".gitignore",
+  "README.md",
+  "CONTRIBUTING.md",
+  "CODE_OF_CONDUCT.md",
+  "SECURITY.md",
+  "SUPPORT.md",
+  "REUSE.toml",
+  "profile/README.md",
+  ".github/PULL_REQUEST_TEMPLATE.md",
+  ".github/ISSUE_TEMPLATE/**",
+  ".github/instructions/**",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Torsten Knodt"
+SPDX-License-Identifier = "CC0-1.0"

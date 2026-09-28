@@ -1,0 +1,55 @@
+name: Feature Request
+description: Suggest a new feature or an improvement to existing behaviour.
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, please search the existing issues to avoid duplicates.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: >
+        Operational urgency — when should this be addressed?
+        P0 = active exploit / safety blocker / IP violation (address immediately).
+        P1 = known unmitigated risk or deadline within 3 months.
+        P2 = planned work, default for most issues.
+        P3 = long-horizon / aspirational.
+      options:
+        - "P2 — planned / default"
+        - "P0 — critical / immediate"
+        - "P1 — deadline within 3 months"
+        - "P3 — long-horizon / aspirational"
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: >
+        Describe the context or limitation that motivates this request.
+        "I want to do X but currently can't because Y."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe how you would like the feature to work.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches you have thought about?
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Mockups, related issues, references, etc.
+    validations:
+      required: false
